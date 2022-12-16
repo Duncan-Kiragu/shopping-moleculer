@@ -1,46 +1,28 @@
-[![Moleculer](https://badgen.net/badge/Powered%20by/Moleculer/0e83cd)](https://moleculer.services)
 
 # shopping-moleculer
-This is a [Moleculer](https://moleculer.services/)-based microservices project. Generated with the [Moleculer CLI](https://moleculer.services/docs/0.14/moleculer-cli.html).
 
-## Usage
-Start the project with `npm run dev` command. 
-After starting, open the http://localhost:3000/ URL in your browser. 
-On the welcome page you can test the generated services via API Gateway and check the nodes & services.
+## Features
+- Web Server
+`Serves frontend to users' browsers`
+- Database
+`Stores product, customer, and order data`
+- Payment Gateway
+`Handles financial transactions`
+- MoleculerJS Service Registry
+`Centralized hub for all services within the system`
+- Product Service
+`Manages and retrieves product data`
+- Customer Service
+`Manages and retrieves customer data`
+- Order Service
+`Processes orders and updates the database with order information`
+- Shipping Service
+`Coordinates with external shipping providers to fulfill orders`
+- Notification Service
+`Sends notifications to customers regarding their orders`
+- Email Service
+`Handles the sending of emails for various purposes within the e-commerce store`
 
-In the terminal, try the following commands:
-- `nodes` - List all connected nodes.
-- `actions` - List all registered service actions.
-- `call greeter.hello` - Call the `greeter.hello` action.
-- `call greeter.welcome --name John` - Call the `greeter.welcome` action with the `name` parameter.
-- `call products.list` - List the products (call the `products.list` action).
-
-
-## Services
-- **api**: API Gateway services
-- **greeter**: Sample service with `hello` and `welcome` actions.
-- **products**: Sample DB service. To use with MongoDB, set `MONGO_URI` environment variables and install MongoDB adapter with `npm i moleculer-db-adapter-mongo`.
-
-## Mixins
-- **db.mixin**: Database access mixin for services. Based on [moleculer-db](https://github.com/moleculerjs/moleculer-db#readme)
-
-
-## Useful links
-
-* Moleculer website: https://moleculer.services/
-* Moleculer Documentation: https://moleculer.services/docs/0.14/
-
-## NPM scripts
-
-- `npm run dev`: Start development mode (load all services locally with hot-reload & REPL)
-- `npm run start`: Start production mode (set `SERVICES` env variable to load certain services)
-- `npm run cli`: Start a CLI and connect to production. Don't forget to set production namespace with `--ns` argument in script
-- `npm run lint`: Run ESLint
-- `npm run ci`: Run continuous test mode with watching
-- `npm test`: Run tests & generate coverage report
-- `npm run dc:up`: Start the stack with Docker Compose
-- `npm run dc:down`: Stop the stack with Docker Compose
-# shopping-moleculer
 
 ## User Stories
 
@@ -54,8 +36,6 @@ In the terminal, try the following commands:
 - As a customer, I want to be able to search for products using keywords or categories, so that I can easily find the items I'm looking for.
 - As a customer, I want to receive personalized product recommendations based on my past purchases and browsing history, so that I can discover new products that I might be interested in.
 - As a customer, I want to be able to shop on the go using the store's mobile app, so that I can shop anytime, anywhere.
-- 
-- 
 - As a store administrator, I want to be able to integrate with external shipping providers to fulfill orders, so that I can offer a variety of shipping options to my customers.
 - As a store administrator, I want to be able to set up multiple payment gateways to support different payment methods, so that I can accommodate my customers' preferred payment options.
 - As a customer, I want to be able to save items to a wishlist for future purchase, so that I can keep track of products I'm interested in but not ready to buy yet.
@@ -65,9 +45,6 @@ In the terminal, try the following commands:
 - As a store administrator, I want to be able to respond to customer reviews and ratings, so that I can address any issues or concerns and improve the store's reputation.
 - As a customer, I want to be able to subscribe to newsletters and marketing emails to receive updates and promotions from the store, so that I can stay informed about new products and special offers.
 - As a store administrator, I want to be able to send targeted marketing emails to specific customer segments based on their past purchases and interests, so that I can more effectively promote my products to relevant customers.
-- 
-- 
-- 
 - As a customer, I want to be able to create an account and log in to access my order history and personal information, so that I can easily track my purchases and update my account details.
 - As a store administrator, I want to be able to manage customer accounts and data, so that I can keep track of my customers and provide personalized experiences.
 - As a customer, I want to be able to securely store my payment information for faster checkout in the future, so that I don't have to enter my payment details every time I make a purchase.
